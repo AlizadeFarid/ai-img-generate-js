@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Image Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container generate-image">
+      <div class="content">
+        <h1>AI Image Generator</h1>
+        <form action="#" class="generate-form">
+          <input
+            class="prompt-input"
+            type="text"
+            placeholder="Enter Text"
+            required
+          />
+          <div class="controls">
+            <select class="image-quantity">
+              <option value="1">1 Image</option>
+              <option value="2">2 Images</option>
+              <option value="3">3 Images</option>
+              <option value="4" selected>4 Images</option>
+            </select>
+            <button type="submit" class="generate-btn">Generate</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <section class="images-box"></section>
+    <script src="app.js"></script>
+  </body>
+</html>
